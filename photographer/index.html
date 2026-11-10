@@ -9,7 +9,7 @@
 
 <meta name="description" content="A wall of photographs by Haanie Hashim: portraits, events and street photography you can drag through in any direction." />
 <meta name="theme-color" content="#030303" />
-<script>document.documentElement.classList.add('pre');if(/[?&]embed\b/.test(location.search))document.documentElement.classList.add('embed');try{if(localStorage.getItem('haanie-mode')==='dark')document.documentElement.dataset.mode='dark'}catch(e){}</script>
+<script>document.documentElement.classList.add('pre');if(/[?&]embed\b/.test(location.search))document.documentElement.classList.add('embed');try{const m=localStorage.getItem('haanie-mode');if(m==='light'){delete document.documentElement.dataset.mode}else{document.documentElement.dataset.mode='dark'}}catch(e){}</script>
 <style>
 :root{
   --bg:#030306; --fg:#E8E4E0; --fg-rgb:232,228,224; --chip:rgba(18,17,17,.62); --chip-line:rgba(232,228,224,.12);

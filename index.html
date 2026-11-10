@@ -5020,7 +5020,7 @@
       }
     }
   </style>
-  <script>try { if (localStorage.getItem('haanie-mode') === 'dark') { document.documentElement.dataset.mode = 'dark'; document.querySelector('meta[name=theme-color]') } } catch (e) { }</script>
+  <script>try { const m = localStorage.getItem('haanie-mode'); if (m === 'light') { delete document.documentElement.dataset.mode; document.querySelector('meta[name=theme-color]').setAttribute('content', '#EEEAE6'); } else { document.documentElement.dataset.mode = 'dark'; document.querySelector('meta[name=theme-color]').setAttribute('content', '#1A1818'); } } catch (e) { }</script>
   <script>
     /* modest devices get the same site with the heaviest per-frame effects eased off */
     (function () {
@@ -5125,7 +5125,7 @@
   <!-- ============ Pull cord: light / dark switch ============ -->
   <div class="cord" id="cord">
     <canvas class="cord__cv" aria-hidden="true"></canvas>
-    <button class="cord__hit" id="cordHit" role="switch" aria-checked="false"
+    <button class="cord__hit" id="cordHit" role="switch" aria-checked="true"
       aria-label="Dark mode (pull the cord)"></button>
   </div>
 
