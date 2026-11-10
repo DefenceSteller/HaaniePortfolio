@@ -10,8 +10,6 @@ haanie-site/
 ├── fonts/
 │   ├── onest-latin.woff2       # Onest font (latin)
 │   └── onest-latin-ext.woff2   # Onest font (latin extended)
-├── hh.png                      # Hero photo (color)
-├── hh_bw.png                   # Hero photo (B&W for liquid reveal)
 ├── web-developer/
 │   └── index.html              # Web Development room
 ├── app-developer/
@@ -28,7 +26,7 @@ haanie-site/
 
 ### Main Page (`index.html`)
 - **Loader** — Colored bars stack up on page load, then slide apart
-- **Hero** — Name, tagline, and portrait with a liquid-reveal cursor trail (color ↔ B&W)
+- **Hero** — Name, tagline, and portrait with a liquid-reveal cursor trail (color ↔ B&W); photo embedded inline as a data URI (no external image file)
 - **Doors** — 5 interactive doors (Web Dev, App Dev, UI/UX, Graphic Design, Photography) that open with a walk-through animation into embedded iframe rooms
 - **Pull-cord** — Dark/light mode toggle styled as a wall cord
 - **Smooth scrolling** — Powered by Lenis
@@ -79,7 +77,7 @@ Toggle via the pull-cord on the main page. Mode persists via `localStorage` and 
 
 ## 📄 License
 
-This is a personal portfolio site. The design is inspired by [therishithakor.com](https://therishithakor.com/). Content and identity belong to **Haanie Hashim**.
+This is a personal portfolio site. Content and identity belong to **Haanie Hashim**.
 
 ---
 
